@@ -1,4 +1,5 @@
 package IntroToJavaWs;
+
 public class CCOutline { // Showcase the outline of a class | Class: fields/constans, methods // Classes: Capitalized
 
   public static void addTwo(int a, int b) {
@@ -7,8 +8,8 @@ public class CCOutline { // Showcase the outline of a class | Class: fields/cons
   }
 
   public static void main(String[] args) { // Special methods: main
+    
     // The simple print statement(s)
-
     System.out.println("====== Prints ======");
     System.out.println("Howdy Partner!");
     System.out.print("Guten ");

@@ -1,14 +1,25 @@
 package IntroToJavaWs;
+
+//Imports are like #include in C
+//Here we import a class that lets us do stuff with arrays
 import java.util.Arrays;
 
+//Example of a simple class
+//Classes are like blueprints for objects
+//Specify the fields and methods that an object will have
+//Objects are instances of a class
+
+// This is the parent class
 public class Student {
 
+  // Fields (variables for object)
   String name;
   int age;
   double gpa;
   String[] classes;
   int[] grades;
 
+  // Constructor (method that initializes object)
   public Student(
     String name,
     int age,
@@ -16,6 +27,7 @@ public class Student {
     String[] classes,
     int[] grades
   ) {
+    //Assign the fields to the parameters of the constructor
     this.name = name;
     this.age = age;
     this.gpa = gpa;
@@ -23,10 +35,12 @@ public class Student {
     this.grades = grades;
   }
 
+  // Methods (functions for object)
   public void iAm() {
     System.out.println("I am a student");
   }
 
+  // Getters and Setters (methods to access and change fields)
   public String getName() {
     return name;
   }
@@ -67,6 +81,7 @@ public class Student {
     this.grades = grades;
   }
 
+  //Returns a string representation of the object
   @Override
   public String toString() {
     return (

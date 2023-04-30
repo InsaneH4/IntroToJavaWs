@@ -1,11 +1,17 @@
 package IntroToJavaWs;
+
+//Lets us use LinkedLists
 import java.util.LinkedList;
 
 public class School {
 
   public static void main(String[] args) {
+    // Intializing list of Students
     LinkedList<Student> students = new LinkedList<Student>();
+
+    //Adding students to the list
     students.add(
+      //Creating a new Student object inside the add method
       new Student(
         "Sam",
         18,
@@ -54,6 +60,7 @@ public class School {
       )
     );
 
+    // Prints Student Information
     for (Student stu : students) {
       stu.iAm();
       System.out.println(stu);
